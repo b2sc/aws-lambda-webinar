@@ -2,10 +2,10 @@
 var fs = require('fs');
 
  exports.get = function(event, context) {
-   var contents = fs.readFileSync("public/index.html");
+//   var contents = fs.readFileSync("public/index.html");
    context.succeed({
      statusCode: 200,
-     body: contents.toString(),
+     body: "hello bb",
      headers: {'Content-Type': 'text/html'}
    });
  };
