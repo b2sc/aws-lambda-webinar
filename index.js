@@ -5,7 +5,7 @@ var fs = require('fs');
 //   var contents = fs.readFileSync("public/index.html");
    context.succeed({
      statusCode: 200,
-     body: "hello bb: a=" + event.queryStringParameters.a + " all=" + JSON.stringify(event),
+     body: "hello bb: a=" + event.queryStringParameters.a + " event=" + JSON.stringify(event) + " context=" + JSON.stringify(context),
      headers: {'Content-Type': 'text/html'}
    });
  };
